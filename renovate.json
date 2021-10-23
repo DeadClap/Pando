@@ -19,6 +19,10 @@
     {
       "matchUpdateTypes": ["patch"],
       "labels": [ "DEPS-PATCH"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
     }
   ]
 }

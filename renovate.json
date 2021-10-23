@@ -1,7 +1,24 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "npm:unpublishSafe"
   ],
   "prHourlyLimit": 0,
-  "assignees": [ "DeadClap" ]
+  "assignees": [ "DeadClap" ],
+  "updateLockFiles": false,
+  "labels": ["Dependencies"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "labels": ["DEPS-MAJOR"]
+    },
+    {
+      "matchUpdateTypes": ["minor"],
+      "labels": [ "DEPS-MINOR"]
+    },
+    {
+      "matchUpdateTypes": ["patch"],
+      "labels": [ "DEPS-PATCH"]
+    }
+  ]
 }

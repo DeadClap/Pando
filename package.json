@@ -23,7 +23,7 @@
     "pretty-ms": "^8.0.0",
     "request": "^2.81.0",
     "sqlite3": "^5.0.0",
-    "superagent": "^8.0.0",
+    "superagent": "^10.0.0",
     "urban": "^0.3.1",
     "uws": "^200.0.0"
   },
